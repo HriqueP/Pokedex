@@ -1,0 +1,173 @@
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+  --body-dark: #252525;
+  --primary-dark: #a8a8a8;
+  --secondary-dark: #dfdfdf;
+
+  --body-light: #888387;
+  --primary-light: #d6dfee;
+  --secondary-light: #363f48;
+}
+
+/*
+PARA USO COM O FLOAT LEFT
+*/
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--body-dark); /* #252525 */
+}
+
+/* Helper Classes */
+.float-left {
+  float: left;
+}
+
+.light-mode-body {
+  background-color: var(--body-light);
+}
+
+.light-mode-card {
+  background-color: var(--primary-light);
+  color: var(--secondary-light);
+  border-color: var(--secondary-light);
+}
+
+.dark-mode-card {
+  background-color: var(--primary-dark);
+  color: var(--secondary-dark);
+  border-color: var(--secondary-dark);
+}
+
+#main-container {
+  /*
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  */
+
+  /* PARA USO COM O FLOAT LEFT */
+  width: 67%;
+  border-radius: 20px;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: right;
+  width: 100%; /* Provisório */
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+/* Button for add new pokemon */
+/*
+#add-new {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #dfdfdf;
+  color: #dfdfdf;
+  padding: 0.8rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+#add-new:hover {
+  background-color: #a8a8a8;
+}
+*/
+
+.btn-mode {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+#img-mode {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.card-pokemon {
+  text-align: center;
+  border-radius: 20px;
+  width: 210px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: 0.3s;
+  margin: 20px;
+}
+
+.card-pokemon:hover {
+  scale: 1.08;
+}
+
+.poke-entry {
+  border: 1px solid var(--secondary-dark);
+  border-radius: 12px;
+  padding: 8px;
+  width: auto;
+}
+
+.gif-pokemon {
+  width: auto;
+}
+
+.gif-pokemon img {
+  background-color: transparent;
+  width: auto;
+  height: 90px;
+  object-fit: cover;
+}
+
+.poke-types img {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+}
+
+.poke-description {
+  overflow: auto;
+}
+
+/* Scrollbar */
+/* Width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Bar */
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+
+/* Bar Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121;
+}
+
+/* For mobile */
+@media only screen and (max-width: 425px) {
+  .card-pokemon {
+    width: 100%;
+  }
+
+  .float-left {
+    float: left;
+    margin: 20px 0px;
+  }
+}

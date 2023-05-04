@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <!-- Page Icon -->
+    <link rel="website icon" type="png" href="assets/Pokeball_Icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="main-container">
+      <div class="div-btn">
+        <!-- <button onclick="addNewPokemon()" id="add-new">Novo +</button> -->
+        <button onclick="changeMode()" class="btn-mode">
+          <img id="img-mode" src="assets/sun-icon.png" alt="mode" />
+        </button>
+      </div>
+
+      <div class="card-pokemon dark-mode-card float-left">
+        <h4 class="poke-entry">VENASAUR #003</h4>
+        <div class="gif-pokemon">
+          <img src="assets/Pokemons/Venasaur.gif" alt="Venasaur" />
+        </div>
+        <div class="poke-types">
+          <img
+            src="assets/Types/Pokémon_Grass_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+          <img
+            src="assets/Types/Pokémon_Poison_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+        </div>
+        <p class="poke-description">
+          Its plant blooms when it is absorbing solar energy. It stays on the
+          move to seek sunlight.
+        </p>
+      </div>
+
+      <div class="card-pokemon dark-mode-card float-left">
+        <h4 class="poke-entry">CHARMANDER #004</h4>
+        <div class="gif-pokemon">
+          <img src="assets/Pokemons/Charmander.gif" alt="Charmander" />
+        </div>
+        <div class="poke-types">
+          <img
+            src="assets/Types/Pokémon_Fire_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+        </div>
+        <p class="poke-description">
+          It has a preference for hot things. When it rains, steam is said to
+          spout from the tip of its tail.
+        </p>
+      </div>
+
+      <div class="card-pokemon dark-mode-card float-left">
+        <h4 class="poke-entry">RAICHU #026</h4>
+        <div class="gif-pokemon">
+          <img src="assets/Pokemons/Raichu.gif" alt="Raichu" />
+        </div>
+        <div class="poke-types">
+          <img
+            src="assets/Types/Pokémon_Electric_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+        </div>
+        <p class="poke-description">
+          Its tail discharges electricity into the ground, protecting it from
+          getting shocked.
+        </p>
+      </div>
+
+      <div class="card-pokemon dark-mode-card float-left">
+        <h4 class="poke-entry">GROWLITHE #058</h4>
+        <div class="gif-pokemon">
+          <img src="assets/Pokemons/Growlithe.gif" alt="Growlithe" />
+        </div>
+        <div class="poke-types">
+          <img
+            src="assets/Types/Pokémon_Fire_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+        </div>
+        <p class="poke-description">
+          It has a brave and trustworthy nature. It fearlessly stands up to
+          bigger and stronger foes.
+        </p>
+      </div>
+
+      <div class="card-pokemon dark-mode-card float-left">
+        <h4 class="poke-entry">MEW #151</h4>
+        <div class="gif-pokemon">
+          <img src="assets/Pokemons/Mew.gif" alt="Lugia" />
+        </div>
+        <div class="poke-types">
+          <img
+            src="assets/Types/Pokémon_Psychic_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+        </div>
+        <p class="poke-description">
+          When viewed through a microscope, this Pokémon’s short, fine, delicate
+          hair can be seen.
+        </p>
+      </div>
+
+      <div class="card-pokemon dark-mode-card float-left">
+        <h4 class="poke-entry">LUGIA #249</h4>
+        <div class="gif-pokemon">
+          <img src="assets/Pokemons/Lugia.gif" alt="Lugia" />
+        </div>
+        <div class="poke-types">
+          <img
+            src="assets/Types/Pokémon_Psychic_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+          <img
+            src="assets/Types/Pokémon_Flying_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+        </div>
+        <p class="poke-description">
+          Lugia’s wings pack devastating power—a light fluttering of its wings
+          can blow apart regular houses. As a result, this Pokémon chooses to
+          live out of sight deep under the sea.
+        </p>
+      </div>
+
+      <div class="card-pokemon dark-mode-card float-left">
+        <h4 class="poke-entry">DARKRAI #491</h4>
+        <div class="gif-pokemon">
+          <img src="assets/Pokemons/Darkrai.gif" alt="Darkrai" />
+        </div>
+        <div class="poke-types">
+          <img
+            src="assets/Types/Pokémon_Dark_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+        </div>
+        <p class="poke-description">
+          It chases people and Pokémon from its territory by causing them to
+          experience deep, nightmarish slumbers.
+        </p>
+      </div>
+
+      <div class="card-pokemon dark-mode-card float-left">
+        <h4 class="poke-entry">CHANDELURE #609</h4>
+        <div class="gif-pokemon">
+          <img src="assets/Pokemons/Chandelure.gif" alt="Chandelure" />
+        </div>
+        <div class="poke-types">
+          <img
+            src="assets/Types/Pokémon_Ghost_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+          <img
+            src="assets/Types/Pokémon_Fire_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+        </div>
+        <p class="poke-description">
+          This Pokémon haunts dilapidated mansions. It sways its arms to
+          hypnotize opponents with the ominous dancing of its flames.
+        </p>
+      </div>
+
+      <div class="card-pokemon dark-mode-card float-left">
+        <h4 class="poke-entry">CRABOMINABLE #740</h4>
+        <div class="gif-pokemon">
+          <img src="assets/Pokemons/Crabominable.png" alt="Crabominable" />
+        </div>
+        <div class="poke-types">
+          <img
+            src="assets/Types/Pokémon_Fighting_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+          <img
+            src="assets/Types/Pokémon_Ice_Type_Icon.png"
+            alt="Pokemon Type"
+          />
+        </div>
+        <p class="poke-description">
+          The detached pincers of these Pokémon are delicious. Some Trainers
+          bring Lechonk into the mountains just to search for them.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
